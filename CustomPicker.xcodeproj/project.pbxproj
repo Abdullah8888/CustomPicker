@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		652EBE4EAC954DAF816E1248 /* Pods_CustomPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96F936D76E18A6316AA52B4 /* Pods_CustomPicker.framework */; };
+		855BE85950956384D1BBC6EA /* Pods_CustomPickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EAB2F041EEC9B4456F8F88 /* Pods_CustomPickerTests.framework */; };
+		C9861FFB24531325003D3F87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9861FFA24531325003D3F87 /* AppDelegate.m */; };
+		C9861FFE24531325003D3F87 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9861FFD24531325003D3F87 /* SceneDelegate.m */; };
+		C986200124531325003D3F87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C986200024531325003D3F87 /* ViewController.m */; };
+		C986200424531325003D3F87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C986200224531325003D3F87 /* Main.storyboard */; };
+		C98620062453132A003D3F87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C98620052453132A003D3F87 /* Assets.xcassets */; };
+		C98620092453132A003D3F87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98620072453132A003D3F87 /* LaunchScreen.storyboard */; };
+		C986200C2453132A003D3F87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C986200B2453132A003D3F87 /* main.m */; };
+		C98620162453132B003D3F87 /* CustomPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C98620152453132B003D3F87 /* CustomPickerTests.m */; };
+		C98620232453BA4D003D3F87 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C98620212453BA4D003D3F87 /* SecondViewController.m */; };
+		C98620242453BA4D003D3F87 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C98620222453BA4D003D3F87 /* SecondViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C98620122453132B003D3F87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9861FEE24531324003D3F87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9861FF524531325003D3F87;
+			remoteInfo = CustomPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6C3B2278B763F262AF3C6155 /* Pods-CustomPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPicker.release.xcconfig"; path = "Target Support Files/Pods-CustomPicker/Pods-CustomPicker.release.xcconfig"; sourceTree = "<group>"; };
+		B8106DD3D8DB5D1A7AA59943 /* Pods-CustomPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPicker.debug.xcconfig"; path = "Target Support Files/Pods-CustomPicker/Pods-CustomPicker.debug.xcconfig"; sourceTree = "<group>"; };
+		C24E075370842E855F7F18FC /* Pods-CustomPickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPickerTests.debug.xcconfig"; path = "Target Support Files/Pods-CustomPickerTests/Pods-CustomPickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C9861FF624531325003D3F87 /* CustomPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9861FF924531325003D3F87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C9861FFA24531325003D3F87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C9861FFC24531325003D3F87 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C9861FFD24531325003D3F87 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C9861FFF24531325003D3F87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C986200024531325003D3F87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C986200324531325003D3F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C98620052453132A003D3F87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C98620082453132A003D3F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C986200A2453132A003D3F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C986200B2453132A003D3F87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C98620112453132B003D3F87 /* CustomPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98620152453132B003D3F87 /* CustomPickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPickerTests.m; sourceTree = "<group>"; };
+		C98620172453132B003D3F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C98620202453BA4D003D3F87 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		C98620212453BA4D003D3F87 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		C98620222453BA4D003D3F87 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		E96F936D76E18A6316AA52B4 /* Pods_CustomPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1EAB2F041EEC9B4456F8F88 /* Pods_CustomPickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomPickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FABC80787449031CDD0CF1F8 /* Pods-CustomPickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPickerTests.release.xcconfig"; path = "Target Support Files/Pods-CustomPickerTests/Pods-CustomPickerTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9861FF324531325003D3F87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				652EBE4EAC954DAF816E1248 /* Pods_CustomPicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C986200E2453132B003D3F87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				855BE85950956384D1BBC6EA /* Pods_CustomPickerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B885FA48A34CD0232CE66AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E96F936D76E18A6316AA52B4 /* Pods_CustomPicker.framework */,
+				F1EAB2F041EEC9B4456F8F88 /* Pods_CustomPickerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70D053C0DBB6DBA005B3BB68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8106DD3D8DB5D1A7AA59943 /* Pods-CustomPicker.debug.xcconfig */,
+				6C3B2278B763F262AF3C6155 /* Pods-CustomPicker.release.xcconfig */,
+				C24E075370842E855F7F18FC /* Pods-CustomPickerTests.debug.xcconfig */,
+				FABC80787449031CDD0CF1F8 /* Pods-CustomPickerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9861FED24531324003D3F87 = {
+			isa = PBXGroup;
+			children = (
+				C9861FF824531325003D3F87 /* CustomPicker */,
+				C98620142453132B003D3F87 /* CustomPickerTests */,
+				C9861FF724531325003D3F87 /* Products */,
+				70D053C0DBB6DBA005B3BB68 /* Pods */,
+				5B885FA48A34CD0232CE66AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C9861FF724531325003D3F87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9861FF624531325003D3F87 /* CustomPicker.app */,
+				C98620112453132B003D3F87 /* CustomPickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9861FF824531325003D3F87 /* CustomPicker */ = {
+			isa = PBXGroup;
+			children = (
+				C9861FF924531325003D3F87 /* AppDelegate.h */,
+				C9861FFA24531325003D3F87 /* AppDelegate.m */,
+				C9861FFC24531325003D3F87 /* SceneDelegate.h */,
+				C9861FFD24531325003D3F87 /* SceneDelegate.m */,
+				C9861FFF24531325003D3F87 /* ViewController.h */,
+				C986200024531325003D3F87 /* ViewController.m */,
+				C986200224531325003D3F87 /* Main.storyboard */,
+				C98620052453132A003D3F87 /* Assets.xcassets */,
+				C98620072453132A003D3F87 /* LaunchScreen.storyboard */,
+				C986200A2453132A003D3F87 /* Info.plist */,
+				C986200B2453132A003D3F87 /* main.m */,
+				C98620202453BA4D003D3F87 /* SecondViewController.h */,
+				C98620212453BA4D003D3F87 /* SecondViewController.m */,
+				C98620222453BA4D003D3F87 /* SecondViewController.xib */,
+			);
+			path = CustomPicker;
+			sourceTree = "<group>";
+		};
+		C98620142453132B003D3F87 /* CustomPickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C98620152453132B003D3F87 /* CustomPickerTests.m */,
+				C98620172453132B003D3F87 /* Info.plist */,
+			);
+			path = CustomPickerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9861FF524531325003D3F87 /* CustomPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C986201A2453132B003D3F87 /* Build configuration list for PBXNativeTarget "CustomPicker" */;
+			buildPhases = (
+				80E952D58533447F8A4E551E /* [CP] Check Pods Manifest.lock */,
+				C9861FF224531325003D3F87 /* Sources */,
+				C9861FF324531325003D3F87 /* Frameworks */,
+				C9861FF424531325003D3F87 /* Resources */,
+				45CA12721BD1D25336D77648 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomPicker;
+			productName = CustomPicker;
+			productReference = C9861FF624531325003D3F87 /* CustomPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C98620102453132B003D3F87 /* CustomPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C986201D2453132B003D3F87 /* Build configuration list for PBXNativeTarget "CustomPickerTests" */;
+			buildPhases = (
+				165D5EFA16864A2FCC87EC3A /* [CP] Check Pods Manifest.lock */,
+				C986200D2453132B003D3F87 /* Sources */,
+				C986200E2453132B003D3F87 /* Frameworks */,
+				C986200F2453132B003D3F87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C98620132453132B003D3F87 /* PBXTargetDependency */,
+			);
+			name = CustomPickerTests;
+			productName = CustomPickerTests;
+			productReference = C98620112453132B003D3F87 /* CustomPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9861FEE24531324003D3F87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Jimoh Babatunde";
+				TargetAttributes = {
+					C9861FF524531325003D3F87 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C98620102453132B003D3F87 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = C9861FF524531325003D3F87;
+					};
+				};
+			};
+			buildConfigurationList = C9861FF124531324003D3F87 /* Build configuration list for PBXProject "CustomPicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9861FED24531324003D3F87;
+			productRefGroup = C9861FF724531325003D3F87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9861FF524531325003D3F87 /* CustomPicker */,
+				C98620102453132B003D3F87 /* CustomPickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9861FF424531325003D3F87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98620242453BA4D003D3F87 /* SecondViewController.xib in Resources */,
+				C98620092453132A003D3F87 /* LaunchScreen.storyboard in Resources */,
+				C98620062453132A003D3F87 /* Assets.xcassets in Resources */,
+				C986200424531325003D3F87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C986200F2453132B003D3F87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		165D5EFA16864A2FCC87EC3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomPickerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45CA12721BD1D25336D77648 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomPicker/Pods-CustomPicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomPicker/Pods-CustomPicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomPicker/Pods-CustomPicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E952D58533447F8A4E551E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomPicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9861FF224531325003D3F87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98620232453BA4D003D3F87 /* SecondViewController.m in Sources */,
+				C986200124531325003D3F87 /* ViewController.m in Sources */,
+				C9861FFB24531325003D3F87 /* AppDelegate.m in Sources */,
+				C986200C2453132A003D3F87 /* main.m in Sources */,
+				C9861FFE24531325003D3F87 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C986200D2453132B003D3F87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98620162453132B003D3F87 /* CustomPickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C98620132453132B003D3F87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9861FF524531325003D3F87 /* CustomPicker */;
+			targetProxy = C98620122453132B003D3F87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C986200224531325003D3F87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C986200324531325003D3F87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C98620072453132A003D3F87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C98620082453132A003D3F87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C98620182453132B003D3F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C98620192453132B003D3F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C986201B2453132B003D3F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8106DD3D8DB5D1A7AA59943 /* Pods-CustomPicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C35WAJESWR;
+				INFOPLIST_FILE = CustomPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimoh.CustomPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C986201C2453132B003D3F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3B2278B763F262AF3C6155 /* Pods-CustomPicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C35WAJESWR;
+				INFOPLIST_FILE = CustomPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimoh.CustomPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C986201E2453132B003D3F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C24E075370842E855F7F18FC /* Pods-CustomPickerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C35WAJESWR;
+				INFOPLIST_FILE = CustomPickerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimoh.CustomPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomPicker.app/CustomPicker";
+			};
+			name = Debug;
+		};
+		C986201F2453132B003D3F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FABC80787449031CDD0CF1F8 /* Pods-CustomPickerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C35WAJESWR;
+				INFOPLIST_FILE = CustomPickerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimoh.CustomPickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomPicker.app/CustomPicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9861FF124531324003D3F87 /* Build configuration list for PBXProject "CustomPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98620182453132B003D3F87 /* Debug */,
+				C98620192453132B003D3F87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C986201A2453132B003D3F87 /* Build configuration list for PBXNativeTarget "CustomPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C986201B2453132B003D3F87 /* Debug */,
+				C986201C2453132B003D3F87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C986201D2453132B003D3F87 /* Build configuration list for PBXNativeTarget "CustomPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C986201E2453132B003D3F87 /* Debug */,
+				C986201F2453132B003D3F87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9861FEE24531324003D3F87 /* Project object */;
+}
