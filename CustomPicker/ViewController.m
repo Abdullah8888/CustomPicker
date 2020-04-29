@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "SecondViewController.h"
-#import "DownPicker.h"
 
 
 @interface ViewController ()
