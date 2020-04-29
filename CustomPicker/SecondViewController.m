@@ -9,11 +9,11 @@
 #import "SecondViewController.h"
 
 @interface SecondViewController () <UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
-@property (weak, nonatomic) IBOutlet UITextField *myTextfield;
-@property (weak, nonatomic) IBOutlet UITextField *mTextfield2;
+@property (weak, nonatomic) IBOutlet UITextField *pLanguageTextfield;
+@property (weak, nonatomic) IBOutlet UITextField *fruitTextfield;
 
-@property (strong, nonatomic) NSMutableArray *bandArray;
-@property (strong, nonatomic) NSMutableArray *bandArray2;
+@property (strong, nonatomic) NSMutableArray *programmingLanguageList;
+@property (strong, nonatomic) NSMutableArray *fruitList;
 @property (strong, nonatomic) UIPickerView *pickerView;
 @property (readwrite, nonatomic) NSInteger check;
 @end
@@ -25,29 +25,29 @@
     
     
     
-    _bandArray = [[NSMutableArray alloc] init];
+    _programmingLanguageList = [[NSMutableArray alloc] init];
     // add some sample data
-    [_bandArray addObject:@"Offspringsdddddd"];
-    [_bandArray addObject:@"Radioheaddddddd"];
-    [_bandArray addObject:@"Musdddddddd"];
-    [_bandArray addObject:@"R.E.M."];
-    [_bandArray addObject:@"The Killers"];
-    [_bandArray addObject:@"Social Distortion"];
+    [_programmingLanguageList addObject:@"Swift"];
+    [_programmingLanguageList addObject:@"Objective-C"];
+    [_programmingLanguageList addObject:@"C#"];
+    [_programmingLanguageList addObject:@"React"];
+    [_programmingLanguageList addObject:@"Go"];
+    [_programmingLanguageList addObject:@"Dart"];
     
-    _bandArray2 = [[NSMutableArray alloc] init];
+    _fruitList = [[NSMutableArray alloc] init];
     // add some sample data
-    [_bandArray2 addObject:@"mango"];
-    [_bandArray2 addObject:@"apple"];
-    [_bandArray2 addObject:@"mat"];
-    [_bandArray2 addObject:@"good"];
-    [_bandArray2 addObject:@"bag"];
-    [_bandArray2 addObject:@"books"];
+    [_fruitList addObject:@"mango"];
+    [_fruitList addObject:@"apple"];
+    [_fruitList addObject:@"orange"];
+    [_fruitList addObject:@"banana"];
+    [_fruitList addObject:@"berry"];
+    [_fruitList addObject:@"melon"];
     // Do any additional setup after loading the view from its nib.
     
-    _myTextfield.delegate = self;
-    _mTextfield2.delegate = self;
-    _myTextfield.tag = 1;
-    _mTextfield2.tag = 2;
+    _pLanguageTextfield.delegate = self;
+    _fruitTextfield.delegate = self;
+    _pLanguageTextfield.tag = 1;
+    _fruitTextfield.tag = 2;
     [self createPickerView];
     //[self createToolbar];
     NSLog(@"here i dey 0");
@@ -55,40 +55,16 @@
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-//func textFieldDidBeginEditing(_ textField: UITextField) {
-//
-//switch textField {
-//case textField1:
-//    activeTextField = 1
-//    picker1.reloadAllComponents()
-//case textField2:
-//    activeTextField = 2
-//    picker1.reloadAllComponents()
-//default:
-//    activeTextField = 0
-//}
-
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
     switch (textField.tag) {
         case 1:
-            NSLog(@"textfield 1");
             _check = 1;
             [self createToolbar];
             [_pickerView reloadAllComponents];
             break;
             
         case 2:
-        NSLog(@"textfield 2");
             _check = 2;
              [self createToolbar];
             [_pickerView reloadAllComponents];
@@ -103,78 +79,59 @@
  {
      return 1;
 }
+
 // The number of rows of data
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
  {
-     NSLog(@"the check dd is now %li", _check);
-//     if (_check == 1) {
-//         return <#expression#>
-//     }
-//     else if (_check == 2){
-//     }
  
      switch (_check) {
          case 1:
-             return [_bandArray count];
+             return [_programmingLanguageList count];
              break;
              
          case 2:
-            return [_bandArray2 count];
+            return [_fruitList count];
             break;
              
          default:
-             return [_bandArray count];
+             return [_programmingLanguageList count];
              break;
      }
-    // return _bandArray.count;
 }
+
 // The data to return for the row and component (column) that's being passed in
  - (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
  {
-     NSLog(@"the check is now %li", _check);
-//     if (_check == 1){
-//         _return _bandArray[row];
-//     }
-//     else{
-//         return _bandArray2[row];
-//     }
-//     else {
-//         return _bandArray[row];
-//     }
      
      switch (_check) {
          case 1:
-             return _bandArray[row];
+             return _programmingLanguageList[row];
              break;
 
          case 2:
-            return _bandArray2[row];
+            return _fruitList[row];
             break;
 
          default:
-             return _bandArray[row];
+             return _programmingLanguageList[row];
              break;
      }
  }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-  //  _myTextfield.text = (_check == 1)? _bandArray[row] : _bandArray2[row];
     switch (_check) {
     case 1:
-        //NSArray *sd = @[@"sed",@"sdffdf"];
-        _myTextfield.text = _bandArray[row];
+        _pLanguageTextfield.text = _programmingLanguageList[row];
         break;
 
     case 2:
-       _mTextfield2.text = _bandArray2[row];
+       _fruitTextfield.text = _fruitList[row];
        break;
 
     default:
-        _myTextfield.text = _bandArray[row];
+        _pLanguageTextfield.text = _programmingLanguageList[row];
         break;
-
-    
 }
 }
 
@@ -202,7 +159,7 @@
     label.textColor = [UIColor yellowColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont fontWithName:@"Helvetica" size:16];
-    label.text = (_check == 1)? _bandArray[row] : _bandArray2[row];
+    label.text = (_check == 1)? _programmingLanguageList[row] : _fruitList[row];
     
     return label;
 
@@ -213,9 +170,8 @@
     _pickerView = [[UIPickerView alloc] init];
     _pickerView.delegate = self;
     _pickerView.dataSource = self;
-    //NSString *dd = [_bandArray objectAtIndex:[_pickerView selectedRowInComponent:0]];
-    _myTextfield.inputView = _pickerView;
-    _mTextfield2.inputView = _pickerView;
+    _pLanguageTextfield.inputView = _pickerView;
+    _fruitTextfield.inputView = _pickerView;
     _pickerView.backgroundColor = [UIColor brownColor];
 }
 
@@ -227,14 +183,14 @@
     toolbar.backgroundColor  = [UIColor blueColor];
     UIBarButtonItem *doneBtn = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStylePlain target:self action:@selector(closePickerView)];
     UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem *button2=[[UIBarButtonItem alloc]initWithTitle:(_check == 1)? @"Title" :  @"Title2" style:UIBarButtonItemStyleDone target:self action:@selector(closePickerView)];
+    UIBarButtonItem *button2=[[UIBarButtonItem alloc]initWithTitle:(_check == 1)? @"Programming Language" :  @"Fruit" style:UIBarButtonItemStyleDone target:self action:@selector(closePickerView)];
     UIBarButtonItem *spacer2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
-    UIBarButtonItem *button3=[[UIBarButtonItem alloc]initWithTitle:@"Cancel3" style:UIBarButtonItemStyleDone target:self action:@selector(closePickerView)];
+    UIBarButtonItem *button3=[[UIBarButtonItem alloc]initWithTitle:@"Cancel" style:UIBarButtonItemStyleDone target:self action:@selector(closePickerView)];
     
     [toolbar setItems:[[NSArray alloc] initWithObjects:doneBtn,spacer,button2,spacer2, button3, nil] animated:YES];
     [toolbar setUserInteractionEnabled:YES];
-    _myTextfield.inputAccessoryView = toolbar;
-    _mTextfield2.inputAccessoryView = toolbar;
+    _pLanguageTextfield.inputAccessoryView = toolbar;
+    _fruitTextfield.inputAccessoryView = toolbar;
 }
 
 -(void) closePickerView
@@ -243,30 +199,3 @@
 }
 
 @end
-
-//func createPickerView()
-//{
-//    picker1.delegate = self
-//    picker1.delegate?.pickerView?(picker1, didSelectRow: 0, inComponent: 0)
-//    textField1.inputView = picker1
-//    textField2.inputView = picker1
-//    picker1.backgroundColor = UIColor.brown
-//
-//}
-//func createToolbar()
-//{
-//    let toolbar = UIToolbar()
-//    toolbar.sizeToFit()
-//    toolbar.tintColor = UIColor.red
-//    toolbar.backgroundColor = UIColor.blue
-//    let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(ViewController.closePickerView))
-//    toolbar.setItems([doneButton], animated: false)
-//    toolbar.isUserInteractionEnabled = true
-//    textField1.inputAccessoryView = toolbar
-//    textField2.inputAccessoryView = toolbar
-//}
-
-//@objc func closePickerView()
-//{
-//    view.endEditing(true)
-//}

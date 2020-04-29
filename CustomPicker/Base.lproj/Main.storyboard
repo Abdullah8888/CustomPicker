@@ -15,73 +15,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wz5-0C-BYP">
-                                <rect key="frame" x="70" y="264" width="274" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bC-1e-agA">
-                                <rect key="frame" x="100" y="398" width="214" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccG-fN-SMg">
-                                <rect key="frame" x="20" y="439" width="374" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="30" y="428" width="354" height="40"/>
+                                <color key="backgroundColor" cyan="0.83476027397260277" magenta="0.1405179794520548" yellow="0.17466504871845245" black="0.4350981841216216" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="sN3-aV-ygk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="presMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HCQ-f9-XHh"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPQ-5l-UsT">
-                                <rect key="frame" x="10" y="479" width="414" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="JWW-80-dry"/>
-                                </constraints>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOW-Is-KhA">
-                                <rect key="frame" x="100" y="589" width="214" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="GTB-4C-cAp"/>
-                                </constraints>
-                            </pickerView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5D-vI-bb7" userLabel="TextField2">
-                                <rect key="frame" x="20" y="128" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="7bC-1e-agA" firstAttribute="top" secondItem="Wz5-0C-BYP" secondAttribute="bottom" constant="100" id="6dv-md-48e"/>
-                            <constraint firstItem="Wz5-0C-BYP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="8nW-8l-vQQ"/>
-                            <constraint firstItem="Wz5-0C-BYP" firstAttribute="top" secondItem="G5D-vI-bb7" secondAttribute="bottom" constant="102" id="9TZ-6R-qor"/>
-                            <constraint firstItem="VPQ-5l-UsT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="B48-5O-3jp"/>
-                            <constraint firstItem="ccG-fN-SMg" firstAttribute="top" secondItem="7bC-1e-agA" secondAttribute="bottom" constant="20" id="CpK-n6-j2J"/>
-                            <constraint firstItem="WOW-Is-KhA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="SJu-Dh-T2w"/>
-                            <constraint firstItem="VPQ-5l-UsT" firstAttribute="top" secondItem="ccG-fN-SMg" secondAttribute="bottom" constant="10" id="SNk-dt-Gep"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G5D-vI-bb7" secondAttribute="trailing" constant="20" id="T33-xC-b70"/>
-                            <constraint firstItem="VPQ-5l-UsT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="10" id="VS6-Ww-5A0"/>
-                            <constraint firstAttribute="trailing" secondItem="WOW-Is-KhA" secondAttribute="trailing" constant="100" id="VZn-by-0qU"/>
-                            <constraint firstItem="WOW-Is-KhA" firstAttribute="top" secondItem="VPQ-5l-UsT" secondAttribute="bottom" constant="30" id="bZP-wO-Zur"/>
-                            <constraint firstItem="G5D-vI-bb7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bpb-Xt-XiD"/>
-                            <constraint firstItem="G5D-vI-bb7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hfi-gi-dQU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7bC-1e-agA" secondAttribute="trailing" constant="100" id="lA2-PY-1Me"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wz5-0C-BYP" secondAttribute="trailing" constant="70" id="nu2-9G-kMG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccG-fN-SMg" secondAttribute="trailing" constant="20" id="psQ-7v-bnb"/>
-                            <constraint firstItem="7bC-1e-agA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="rje-sn-PmN"/>
-                            <constraint firstItem="ccG-fN-SMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wLb-3B-ZrH"/>
+                            <constraint firstItem="ccG-fN-SMg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="56B-cn-4RY"/>
+                            <constraint firstItem="ccG-fN-SMg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Bg1-gj-a3c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ccG-fN-SMg" secondAttribute="trailing" constant="30" id="sXk-8Y-aCt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="5bM-as-vXp"/>
-                    <connections>
-                        <outlet property="myLabel" destination="7bC-1e-agA" id="XMi-ph-qmf"/>
-                        <outlet property="myPicker" destination="VPQ-5l-UsT" id="x6H-K1-30u"/>
-                        <outlet property="myPicker2" destination="WOW-Is-KhA" id="IUX-pH-SQm"/>
-                        <outlet property="myTextField" destination="Wz5-0C-BYP" id="wds-Yd-jE7"/>
-                        <outlet property="realTextField" destination="G5D-vI-bb7" id="mFO-6R-fc1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
